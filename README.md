@@ -68,6 +68,22 @@
    - Grava os dados no banco SQLite.
 
 ---
+** Docker Compose para o Ambiente Spark **
+
+Objetivo:
+
+    Configurar um ambiente Spark com Docker Compose.
+    Utilizar serviços para o Spark Master, Spark Worker e Spark History Server.
 
 
 - Estes códigos demonstram um fluxo de trabalho típico em ciência de dados, desde a extração e transformação de dados até a associação com um banco de dados para armazenamento permanente. A combinação de PySpark e SQLite3 proporciona uma solução eficiente e escalável para processamento e persistência de dados.
+
+- Imagem PySpark no Docker
+
+Objetivo:
+
+    Criar uma imagem Docker baseada em Python 3.11 para ambientes PySpark.
+    Preparar o ambiente com Spark e PySpark.
+
+
+O Docker Compose facilita a orquestração de containers, permitindo configurar e interconectar serviços para ambientes Spark de maneira eficiente. A imagem PySpark no Docker oferece um ambiente preparado para o desenvolvimento e execução de aplicações Spark, incorporando Spark e PySpark de forma integrada.
