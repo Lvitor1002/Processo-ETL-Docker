@@ -1,0 +1,32 @@
+Requisitos: 
+Docker 
+DB Browser for SQLite 
+Linux
+Python
+Instalção do PySpark no Linux
+
+
+
+
+
+
+Comandos para o ambiente Docker:
+
+# Criar e Inicializar o Cluster Pyspark na pasta raiz no Docker
+docker-compose -p projeto1-cluster up -d --scale spark-worker=2
+
+
+
+
+
+
+Comandos para o ambiente ETL:
+
+Execute o comando no terminal linux na pasta correta: 
+python criando_json.py
+python criando_db.py
+
+
+Quando terminar os métodos ETL.. Vá no Docker e ligue o Cluster e no terminal Linux: 
+docker exec projeto2-master spark-submit --jars data/sqlite-jdbc-3.44.1.0.jar --deploy-mode client ./apps/pipeline.py
+
